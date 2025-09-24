@@ -1,0 +1,103 @@
+#root {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Inter', Avenir, Helvetica, Arial, sans-serif;
+  color: #222;
+  background-color: #fafafa;
+  text-align: center; 
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+#root > img {
+  width: 100%;         
+  max-height: 250px;    
+  object-fit: cover;    
+  margin-bottom: 1.5rem;
+  border-radius: 8px;  
+}
+
+.banner_image {
+  width: 100%;          
+  max-height: 250px;    
+  object-fit: cover;    
+  display: block;      
+  margin: 0 auto 1.5rem auto;
+  border-radius: 8px;   
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  color: #2c3e50;
+}
+
+h3 {
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.museum-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.museum-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.museum-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.museum-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.museum-card h2 {
+  font-size: 1.25rem;
+  margin: 0.75rem 0 0.25rem;
+  color: #2c3e50;
+}
+
+.museum-card p {
+  margin: 0.25rem 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Visit button */
+.museum-card a {
+  display: inline-block;
+  margin: 1rem auto; /* center horizontally */
+  padding: 0.5rem 1.25rem;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.museum-card a:hover {
+  background: #2980b9;
+}
